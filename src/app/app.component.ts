@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import { UserDetailsProvider } from '../providers/user-details/user-details';
 
 @Component({
   templateUrl: 'app.html'
@@ -17,7 +18,7 @@ export class MyApp {
   firstRun: boolean = true;
 
   constructor(private platform: Platform, private statusBar: StatusBar,
-              private splashScreen: SplashScreen) {
+              private splashScreen: SplashScreen, public userDetailsProvider: UserDetailsProvider) {
 
     // Initialize Firebase
     const config = {
@@ -38,9 +39,11 @@ export class MyApp {
       if (user) {
         // User is authenticated.
         this.setRootPage(HomePage);
+        this.userDetailsProvider.SetUser(user);
       } else {
         // User is not authenticated.
         this.setRootPage(LoginPage);
+        this.userDetailsProvider.SetUser(null);
       }
     });
   }

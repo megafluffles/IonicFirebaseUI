@@ -10,10 +10,12 @@ import { AuthProvider } from '../../providers/auth/auth';
 export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private authProvider: AuthProvider) {
+    
   }
 
   ionViewDidLoad() {
     // The start method will wait until the DOM is loaded.
+    console.log('ionViewDidLoad');
     this.authProvider.ui.start('#firebaseui-auth-container', AuthProvider.getUiConfig());
   }
 

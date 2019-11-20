@@ -8,6 +8,10 @@
 
 <ion-content padding>
   <h2>Welcome to your awesome app!</h2>
+  <ion-img [src]="profileUrl"></ion-img><br/>
+  <button ion-button (click)="loadPic()">
+    Load Profile Picture
+  </button><br/>
   <button ion-button (click)="logout()">
     Log out
   </button>

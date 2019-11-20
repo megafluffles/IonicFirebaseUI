@@ -4,6 +4,17 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    {
+        "name": "Serve to the browser (ionic serve)",
+        "type": "cordova",
+        "request": "launch",
+        "platform": "serve",
+        "devServerAddress": "localhost",
+        "sourceMaps": true,
+        "ionicLiveReload": true,
+        "cwd": "${workspaceFolder}",
+        "linux": {"runtimeExecutable":"google-chrome-stable"}
+    },
         {
             "name": "Run Android on emulator",
             "type": "cordova",
