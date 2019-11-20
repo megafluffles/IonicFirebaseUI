@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.firebaseui" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="me.justinbrown.demoionicauth" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>IonicFirebaseUI</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -90,8 +90,8 @@
         <variable name="URL_SCHEME" value="io.ionic.firebaseui" />
     </plugin>
     <universal-links>
-        <host name="w2nsc.app.goo.gl" scheme="https" />
-        <host name="ionicfirebaseui.firebaseapp.com" scheme="https">
+        <host name="demoionicauth.page.link" scheme="https" />
+        <host name="fir-ionic-auth-1d357.firebaseapp.com" scheme="https">
             <path url="/__/auth/callback" />
         </host>
     </universal-links>

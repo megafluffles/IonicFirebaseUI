@@ -21,13 +21,14 @@ export class MyApp {
 
     // Initialize Firebase
     const config = {
-      apiKey: "AIzaSyB0qxCieE7-B0aM0m03qdoSomMk0xVG3dY",
-      authDomain: "ionicfirebaseui.firebaseapp.com",
-      databaseURL: "https://ionicfirebaseui.firebaseio.com",
-      projectId: "ionicfirebaseui",
-      storageBucket: "ionicfirebaseui.appspot.com",
-      messagingSenderId: "281186760812"
-    };
+      apiKey: "AIzaSyCEOva55n5zwOyu5Gk7Z00VL3wUn3CO9Zk",
+      authDomain: "fir-ionic-auth-1d357.firebaseapp.com",
+      databaseURL: "https://fir-ionic-auth-1d357.firebaseio.com",
+      projectId: "fir-ionic-auth-1d357",
+      storageBucket: "fir-ionic-auth-1d357.appspot.com",
+      messagingSenderId: "201403058444",
+      appId: "1:201403058444:web:8ce9caab5f437b85a96129"
+        };
     firebase.initializeApp(config);
   }
 
